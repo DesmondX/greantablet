@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">NH4</string>
+
+    <string name="nh4c">氨氮 %1$.3f mg/L</string>
+    <string name="testtime">"测试时间: %1$s"</string>
+
+    <string name="device_info">"仪器信息"</string>
+    <string name="device_code">"设备编号"</string>
+    <string name="build_version">"软件版本"</string>
+
+    <string name="initialize">初始化</string>
+    <string name="sample_test">质控样检测</string>
+    <string name="standard_test">标液测试</string>
+    <string name="clean">清洗</string>
+
+    <string name="mode">模式</string>
+    <string name="offline">离线</string>
+    <string name="online">在线</string>
+    <string name="test">测量</string>
+    <string name="scheduled_time">定时:</string>
+
+    <string name="single_test">单次测量</string>
+    <string name="loop_test">连续:</string>
+    <string name="immediate_test">启动测量</string>
+    <string name="timing_test">定时测量</string>
+    <string name="gap_time">间隔时间: %1$d小时%2$02d分</string>
+
+    <string name="calibration">校准</string>
+    <string name="low_calibration">低点校准</string>
+    <string name="high_calibration">高点校准</string>
+    <string name="both_calibration">一键校准</string>
+    <string name="absorbance">吸光度: %1$s 单位</string>
+
+    <string name="history">历史数据</string>
+    <string name="workdairy">工作日志</string>
+
+    <string name="stop">系统停止</string>
+    <string name="on">"开"</string>
+    <string name="off">"关"</string>
+    <string name="tel">Telephone: 0571-12345678</string>
+
+    <string name="status">状态: %1$s</string>
+    <string name="status_1">待机</string>
+    <string name="status_2">status2</string>
+    <string name="status_3">status3</string>
+    <string name="status_4">status4</string>
+    <string name="next_time">下次测量时间：%1$s</string>
+
+
+    <string name="settime">系统时间设置</string>
+
+    <string name="unit">mg/L</string>
+    <string name="unit_second">秒</string>
+
+
+    <!--notification tips-->
+    <string name="toast_im_loop">循环测量现在开始</string>
+    <string name="toast_im_single">单次测量开始</string>
+    <string name="toast_scd_single">"定时单次测量已开启"</string>
+    <string name="toast_scd_loop">"定时循环测量已开启"</string>
+    <string name="tips_null_time">"未设置定时时间"</string>
+    <string name="tips_outdate">"定时时间早于当前"</string>
+    <string name="confirm_scd_single">开启定时单次测量？ (定时时间为%1$s/%2$02d:%3$02d)</string>
+    <string name="confirm_scd_loop">开启定时循环测量？ (定时时间为%1$s/%2$02d:%3$02d 测量间隔为%4$d小时%5$d分)</string>
+    
+    <!--settings tabs-->
+    <string name="general_setting">通用设置</string>
+    <string name="com_setting">通讯设置</string>
+    <string name="control_setting">控制调试</string>
+    <string name="prime_setting">高级设置</string>
+
+
+    <string name="set_bg_light">背光强度</string>
+    <string name="set_screensaver">屏保设置</string>
+    <string name="screensaver_autotime">启动时间</string>
+
+    <string name="comset">通讯配置</string>
+    <string name="comtest">通讯测试</string>
+    <string name="com_address">地址</string>
+    <string name="com_baud_rate">波特率</string>
+    <string name="com_check_bit">校验位</string>
+    <string name="com_data_bits">数据位</string>
+    <string name="com_stop_bit">停止位</string>
+    <string name="com_send">数据发送:</string>
+    <string name="com_receive">数据接收:</string>
+    <string name="send">发送</string>
+    <string-array name="baud_rate">
+        <item>4800</item>
+        <item>9600</item>
+        <item>14400</item>
+        <item>19200</item>
+        <item>38400</item>
+    </string-array>
+
+
+
+    <string name="prime_admin">管理员登陆</string>
+
+
+    <string name="eight_valve">八通阀</string>
+    <string name="straight_way_pump">直流泵</string>
+    <string name="precise_pump">精密泵</string>
+    <string name="pump_test">泵测试</string>
+    <string name="pump_cal">泵校准</string>
+    <string name="light_intensity_test">光强检测</string>
+    <string name="mode_temprature">混合模块温度</string>
+    <string name="lique_level_detect">液位检测</string>
+    
+    <string name="flow">流量(mL):</string>
+    <string name="time">时间(S):</string>
+    <string name="circles">圈数:</string>
+    <string name="after_ajust">修正后启停</string>
+    <string name="no_adjust">无修正启停</string>
+    <string name="actual_flow">实际流量:</string>
+    
+    <string name="test_light_intensity">测量光强</string>
+    <string name="compared_light_intensity">参比光强</string>
+    <string name="test_temperature">检测温度(℃):</string>
+    <string name="temperature_test">温度检测(℃):</string>
+    <string name="temperature_actual">实际温度</string>
+    <string name="temperature_standard">温度标定</string>
+    <string name="test_lique_level">检测液位</string>
+</resources>

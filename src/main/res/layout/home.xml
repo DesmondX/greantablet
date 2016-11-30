@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffee"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/grean"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/nh4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_weight="1"
+            android:text="@string/nh4c"
+            android:textSize="50sp"
+            android:textColor="#007D3C"/>
+
+            <TextView
+                android:id="@+id/testime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/testtime"
+                android:textSize="30sp"
+                android:textColor="#007D3C"/>
+
+
+
+    </LinearLayout>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/spread_line_chart"
+        android:layout_width="900dp"
+        android:layout_height="360dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+    <ProgressBar
+        android:id="@+id/testprogess"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:progressDrawable="@drawable/progressbar"
+        android:layout_width="835dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="0"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:alpha="0.4"
+        android:visibility="gone"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#008cc2"
+        android:textSize="25sp"
+        android:text="显示点数"/>
+    <EditText
+        android:id="@+id/chart_num"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_pressed"
+        android:hint="number"
+        android:textColorHint="#008cc2"
+        android:gravity="center"
+        android:inputType="number"
+
+        android:maxLength="2"
+        android:textColor="#008cc2"
+        android:textSize="25sp"
+        android:imeOptions="actionDone"
+
+        />
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/button_pressed"
+        android:hint="test"
+        android:inputType="number"
+
+        android:maxEms="3"
+        android:textColor="#008cc2"
+        android:textSize="25sp"
+        android:imeOptions="actionDone"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="#00835c"
+        android:text="@string/sample_test"
+        android:textColor="#ffffee"
+        android:textSize="25sp"
+        android:alpha="0.9"
+        />
+    <Button
+        android:id="@+id/initest"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bt_selector"
+        android:text="initialize"
+        android:textColor="@drawable/text_selector"
+        android:textSize="25sp"
+
+        />
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="#008cc2"
+        android:text="@string/clean"
+        android:textColor="#ffffee"
+        android:textSize="25sp"
+        android:alpha="0.9"
+        android:visibility="gone"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="#0089e6"
+        android:text="scheduled test"
+        android:textColor="#ffffee"
+        android:textSize="25sp"
+        android:alpha="1"
+        android:visibility="gone"
+        />
+</LinearLayout>
+
+
+
+</LinearLayout>

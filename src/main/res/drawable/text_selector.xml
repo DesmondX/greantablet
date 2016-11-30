@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- When selected,use grey -->
+    <!--<item android:drawable="@android:drawable/btn_star_big_on"-->
+        <!---->
+        <!--android:state_checked="true"/>-->
+    <!--&lt;!&ndash; When not selected ,use white &ndash;&gt;-->
+    <!--<item android:drawable="@android:drawable/btn_star_big_off"-->
+        <!--/>-->
+    <item
+        android:color="@color/blue"
+        android:state_pressed="true"
+        />
+
+    <item android:color="@color/white"/>
+</selector>

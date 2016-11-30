@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffee"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+                <TextView
+                    android:id="@+id/text_comset"
+                    android:layout_width="450dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/comset"
+                    android:textSize="40sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_marginLeft="25dp" />
+
+
+
+                <TextView
+                    android:id="@+id/com_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="@string/com_address"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/text_comset"
+                    android:layout_marginLeft="30dp"/>
+                <EditText
+                    android:id="@+id/address"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/com_address"
+                    android:layout_alignBaseline="@id/com_address"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/gray_light"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="30sp"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:gravity="center_horizontal|bottom"/>
+
+                <TextView
+                    android:id="@+id/com_baud_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:text="@string/com_baud_rate"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/com_address"
+                    android:layout_marginLeft="30dp"/>
+                <Spinner
+                    android:id="@+id/spinner_baud_rate"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/baud_rate"
+                    android:layout_below="@id/com_address"
+                    android:layout_toRightOf="@id/com_baud_rate"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:popupBackground="@color/gray_light"/>
+
+
+
+                <TextView
+                    android:id="@+id/com_check_bit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:text="@string/com_check_bit"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/com_baud_rate"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/com_date_bits"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:text="@string/com_data_bits"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/com_check_bit"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:id="@+id/com_stop_bit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="90dp"
+                    android:gravity="center"
+                    android:text="@string/com_stop_bit"
+                    android:textSize="30sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/com_date_bits"
+                    android:layout_marginLeft="30dp"/>
+
+
+                <!--the divider-->
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/text_comset"
+                    android:background="@color/blue"/>
+
+
+
+                <!--right side-->
+                <TextView
+                    android:id="@+id/text_comtest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:text="@string/comtest"
+                    android:textSize="40sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toRightOf="@id/text_comset"/>
+
+                <Switch
+                    android:id="@+id/switch_com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:switchTextAppearance="@drawable/switch_text_selector"
+                    android:textColor="@drawable/switch_text_selector"
+                    android:track="@drawable/track_drawable"
+                    android:thumb="@drawable/thumb_selector"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@id/text_comtest"/>
+
+
+
+                <TextView
+                    android:id="@+id/com_send"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="@string/com_send"
+                    android:textSize="35sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/text_comtest"
+                    android:layout_toRightOf="@id/divider" />
+
+                <EditText
+                    android:id="@+id/send_mgl"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_toRightOf="@id/divider"
+                    android:layout_below="@id/com_send"
+                    android:layout_marginLeft="30dp"
+                    android:background="@color/gray_light"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="30sp"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/send_mgl"
+                    android:layout_alignBaseline="@id/send_mgl"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/blue_dark"
+                    android:text="@string/unit"
+                    android:textSize="40sp"/>
+                <Button
+                    android:id="@+id/com_button"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/bt_selector"
+                    android:text="@string/send"
+                    android:textSize="30sp"
+                    android:textColor="@drawable/text_selector"
+                    android:layout_above="@+id/send_digit"
+                    android:layout_toRightOf="@id/send_mgl"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginTop="15dp"/>
+
+                <EditText
+                    android:id="@+id/send_digit"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:background="@color/gray_light"
+                    android:textColor="@color/blue_dark"
+                    android:textSize="30sp"
+                    android:layout_below="@id/send_mgl"
+                    android:layout_toRightOf="@id/divider"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/com_receive"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="@string/com_receive"
+                    android:textSize="35sp"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/send_digit"
+                    android:layout_toRightOf="@id/divider" />
+
+                <TextView
+                    android:id="@+id/receive_data"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:background="@color/gray_light"
+                    android:textColor="@color/blue_dark"
+                    android:layout_below="@id/com_receive"
+                    android:layout_toRightOf="@id/divider"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"/>
+
+
+</RelativeLayout>

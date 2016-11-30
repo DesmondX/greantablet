@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="#007cc2"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/hometab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+           />
+        <RadioButton
+            android:id="@+id/operatetab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:button="@null"
+            android:layout_weight="1"
+
+            />
+        <RadioButton
+            android:id="@+id/settingtab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/historytab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+        <RadioButton
+            android:id="@+id/infotab"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:button="@null"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+</LinearLayout>

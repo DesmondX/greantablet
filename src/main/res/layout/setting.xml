@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffee"
+    android:orientation="vertical"
+    android:id="@+id/setting"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/setting_general"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:button="@null"
+            android:text="@string/general_setting"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:textColor="@drawable/rbtext_selector"/>
+        <RadioButton
+            android:id="@+id/setting_com"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/com_setting"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@drawable/rbtext_selector"/>
+        <RadioButton
+            android:id="@+id/setting_control"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/control_setting"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textColor="@drawable/rbtext_selector"/>
+        <RadioButton
+            android:id="@+id/setting_prime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="@string/prime_setting"
+            android:textSize="30sp"
+            android:gravity="center_vertical"
+            android:textColor="@drawable/rbtext_selector"/>
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/setframe"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!--<include-->
+        <!--android:id="@+id/logo"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--layout="@layout/grean"-->
+        <!--/>-->
+
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/shutdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reboot"
+        android:textSize="30sp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="effect"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="gap_hour">4</integer>
+    <integer name="gap_min">0</integer>
+    <integer name="still_time">60</integer>
+    <!--brightness of backlight: 0-255. and if <10 the screen stop working-->
+    <integer name="background_light">204</integer>
+
+    <bool name="if_mode_online">true</bool>
+    <bool name="if_loop">false</bool>
+    <bool name="if_schedule">false</bool>
+    <bool name="if_daydream">true</bool>
+    <bool name="if_comtest_on">false</bool>
+</resources>
